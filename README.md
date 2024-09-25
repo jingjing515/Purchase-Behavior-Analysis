@@ -14,6 +14,13 @@ We used the **Customer Personality Analysis** dataset from Kaggle, which contain
 
 - **Total_Num**: Sum of purchases across different channels (Web, Catalog, Store).
 - **Total_Mnt**: Total monetary spend across product categories (Wines, Fruits, Meat, etc.).
+- **Age**: Calculated from *Year_Birth*, indicating the customer’s age.
+- **Living_Situation**: Derived from *Marital_Status*, indicating whether a customer lives alone or with a partner. Customers living with partners or families might be interested in different products than those living alone.
+- **Num_Children**: Combined *KidHome* and *TeenHome* to represent the number of children and teenagers in the household. This helps in targeting family-oriented products and promotions.
+- **Is_Parent**: A binary indicator generated from *KidHome* and *TeenHome* to determine whether a customer has children. Parents may have different product needs.
+- **Family_Size**: Combines *Marital_Status* and *Num_Children* to estimate the total number of family members. Family size may influence product preferences, purchase frequencies, and product categories.
+- **Education**: Simplified education levels into two categories: Undergraduate and Below, Graduate and Above.
+- **Campaigns_Accepted**: Total number of positive responses to all campaigns, generated from *AcceptedCmp1*, *AcceptedCmp2*, *AcceptedCmp3*, *AcceptedCmp4*, *AcceptedCmp5*, and *Response*.
 
 ## Methods Used
 
